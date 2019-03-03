@@ -9,7 +9,7 @@
                 <th></th>
             </tr>
         @foreach($projects as $project)
-            <tr>
+            <tr onclick="window.location='/projects/{{ $project->id }}'">
                 <td>
                     {{$project->id}}
                 </td>                <td>
